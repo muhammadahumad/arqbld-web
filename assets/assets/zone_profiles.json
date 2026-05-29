@@ -1,0 +1,98 @@
+{
+  "hdc_hulhumale_phase1_residential_2026": {
+    "zone_id": "hdc_hulhumale_phase1_residential_2026",
+    "authority": "HDC",
+    "max_height_m": 30.5,
+    "height_tiers": {
+      "under_400_sqft": { "max_height_m": 6.0, "max_floors": 1 },
+      "400_499_sqft": { "max_height_m": 6.5, "max_floors": 2 },
+      "500_599_sqft": { "max_height_m": 9.5, "max_floors": 3 },
+      "600_699_sqft": { "max_height_m": 12.5, "max_floors": 4 },
+      "700_799_sqft": { "max_height_m": 15.5, "max_floors": 5 },
+      "800_900_sqft": { "max_height_m": 24.5, "max_floors": 8 },
+      "above_900_sqft": { "max_height_m": 30.5, "max_floors": 10 }
+    },
+    "max_plot_coverage_pct": 65,
+    "setbacks": { "front": 3.0, "rear": 1.5, "sides": 1.5 },
+    "guesthouse_allowed": false,
+    "height_tied_to_street_width": false,
+    "connects_to_sewer_grid": true,
+    "requires_septic_tank": false,
+    "solar_panel_ready": true,
+    "rainwater_tank_required": true,
+    "green_space_min_pct": 10.0,
+    "allowed_primary_uses": ["residential", "mixed_use"]
+  },
+  "hdc_hulhumale_phase1_residential": {
+    "zone_id": "hdc_hulhumale_phase1_residential",
+    "authority": "HDC",
+    "max_height_m": 20.0,
+    "max_floors": 6,
+    "max_plot_coverage_pct": 65,
+    "setbacks": { "front": 3.0, "rear": 1.5, "sides": 1.5 },
+    "guesthouse_allowed": false,
+    "height_tied_to_street_width": false,
+    "connects_to_sewer_grid": true,
+    "requires_septic_tank": false,
+    "solar_panel_ready": true,
+    "rainwater_tank_required": true,
+    "green_space_min_pct": 10.0,
+    "allowed_primary_uses": ["residential", "mixed_use"]
+  },
+  "male_city_residential": {
+    "zone_id": "male_city_residential",
+    "authority": "MCC",
+    "max_height_m": 30.0,
+    "max_floors": null,
+    "max_plot_coverage_pct": 80,
+    "setbacks": { "front": 0.0, "rear": 0.0, "sides": 0.0 },
+    "guesthouse_allowed": false,
+    "height_tied_to_street_width": true,
+    "street_width_modifier": {
+      "applies": true,
+      "table": { "<3m": 12.0, "3-6m": 18.0, ">6m": 25.0 }
+    },
+    "connects_to_sewer_grid": true,
+    "requires_septic_tank": false,
+    "solar_panel_ready": false,
+    "rainwater_tank_required": false,
+    "green_space_min_pct": 5.0,
+    "allowed_primary_uses": ["residential", "commercial", "mixed_use"]
+  },
+  "island_generic_residential": {
+    "zone_id": "island_generic_residential",
+    "authority": "Local Council",
+    "max_height_m": 10.5,
+    "max_floors": 3,
+    "max_plot_coverage_pct": 50,
+    "setbacks": { "front": 1.5, "rear": 1.5, "sides": 1.5 },
+    "guesthouse_allowed": false,
+    "height_tied_to_street_width": false,
+    "connects_to_sewer_grid": false,
+    "requires_septic_tank": true,
+    "solar_panel_ready": false,
+    "rainwater_tank_required": true,
+    "green_space_min_pct": 20.0,
+    "allowed_primary_uses": ["residential"]
+  },
+  "island_generic_guesthouse": {
+    "zone_id": "island_generic_guesthouse",
+    "authority": "Local Council",
+    "max_height_m": 12.0,
+    "max_floors": 3,
+    "max_plot_coverage_pct": 55,
+    "setbacks": { "front": 1.5, "rear": 1.5, "sides": 1.5 },
+    "guesthouse_allowed": true,
+    "height_tied_to_street_width": false,
+    "connects_to_sewer_grid": false,
+    "requires_septic_tank": true,
+    "solar_panel_ready": false,
+    "rainwater_tank_required": true,
+    "green_space_min_pct": 15.0,
+    "allowed_primary_uses": ["guesthouse", "residential"],
+    "extra_spaces": [
+      { "type": "reception", "min_area_m2": 15.0, "required": true },
+      { "type": "commercial_kitchen_fire_separation", "note": "Fire‑rated partition required" }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "guidelineVersion": "MEICT_2023",
+  "climate": {
+    "avgTempC": 29.0,
+    "minHumidity": 75.0,
+    "peakSolarRadiation_kWh_m2": 2000.0
+  },
+  "envelope": {
+    "wallUValue_max": 0.5,
+    "roofUValue_max": 0.3,
+    "glassUValue_max": 3.0,
+    "shgc_limits": {
+      "wwr_30": 0.35,
+      "wwr_40": 0.28
+    }
+  },
+  "wwr": {
+    "max": 0.4,
+    "recommended": 0.3
+  },
+  "orientation": {
+    "best_facade": "North-South",
+    "penalty_facades": ["East","West","South"]
+  },
+  "shading": {
+    "mandatory_facades": ["East","West","South"],
+    "minimumDepth_m": 0.6
+  },
+  "lighting": {
+    "powerDensity_W_m2": 7.0
+  },
+  "ac": {
+    "minCSPF": 3.5,
+    "minEER": 3.2
+  },
+  "epi": {
+    "targetRatio": 1.0,
+    "baselineEPI_kWh_m2": 120
+  }
+}
